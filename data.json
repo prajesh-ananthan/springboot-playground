@@ -1,0 +1,15 @@
+[
+  // Topic
+  {
+    "id": "java",
+    "name": "Java Programming",
+    "description": "The study of Java Programming"
+  },
+
+  // Course
+  {
+    "id": "streams",
+    "name": "Java Streams",
+    "description": "Java Streams fundamentals"
+  }
+]
