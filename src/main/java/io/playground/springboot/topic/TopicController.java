@@ -1,24 +1,18 @@
 package io.playground.springboot.topic;
 
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
-
 import io.playground.springboot.topic.pojo.Topic;
 import io.playground.springboot.topic.service.TopicService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 public class TopicController {
 
-  private TopicService topicService;
-
   private final String TOPICS = "/topics";
   private final String TOPICS_ID_PATH = TOPICS + "/{id}";
+  private TopicService topicService;
 
   @RequestMapping(value = TOPICS)
   public List<Topic> getTopics() {
