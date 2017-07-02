@@ -1,13 +1,12 @@
 [
-  // Topic
   {
+    "__comment__": "Topic",
     "id": "java",
     "name": "Java Programming",
     "description": "The study of Java Programming"
   },
-
-  // Course
   {
+    "__comment__": "Course",
     "id": "streams",
     "name": "Java Streams",
     "description": "Java Streams fundamentals"
